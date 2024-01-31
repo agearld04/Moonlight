@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            background-color: #2E2E2E;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #aboutme-container {
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        #gif {
+            width: 100%;
+            height: auto;
+        }
+
+        button {
+            background-color: #1E90FF;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .copyright {
+            font-size: 10px;
+        }
+
+        .rainbow-text {
+            background-image: linear-gradient(to left, red, red);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="aboutme-container">
+        <img id="gif" src="15e677923b1ad170360c4e56ca1b80f2.gif" alt="GIF">
+        <p class="rainbow-text">Moonlight</p>
+        <p>Contact: FPSFIGHTER on Discord</p>
+        <button onclick="openDiscord()">Join Discord</button>
+    </div>
+
+    <p class="copyright" style="position: fixed; bottom: 0; width: 100%; text-align: center;">Copyright © 2024 FPSFIGHTER. All rights reserved.</p>
+
+    <script>
+        function openDiscord() {
+            window.open("https://discord.gg/VgC5KHEy23");
+        }
+    </script>
+</body>
+
+</html>
