@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+
+    <!-- Open Graph Tags for Link Preview -->
+    <meta property="og:title" content="Nightlight">
+    <meta property="og:description" content="Contact FPSFIGHTER on Discord">
+    <meta property="og:image" content="URL_TO_YOUR_IMAGE">
+    <meta property="og:url" content="https://your-website-url.com">
+
     <style>
         body {
             background-color: #2E2E2E;
@@ -40,6 +47,10 @@
 
         .copyright {
             font-size: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
         }
 
         .rainbow-text {
@@ -57,11 +68,16 @@
         <p class="rainbow-text">Nightlight</p>
         <p>Contact: FPSFIGHTER on Discord</p>
         <button onclick="openDiscord()">Join Discord</button>
+        <button onclick="openGame()">Play a Game</button>
     </div>
 
-    <p class="copyright" style="position: fixed; bottom: 0; width: 100%; text-align: center;">Copyright © 2024 FPSFIGHTER. All rights reserved.</p>
+    <p class="copyright">Copyright © 2024 FPSFIGHTER. All rights reserved.</p>
 
     <script>
+        function openGame() {
+            window.location.href = "https://your-game-url.com";
+        }
+
         function openDiscord() {
             window.open("https://discord.gg/VgC5KHEy23");
         }
