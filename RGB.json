@@ -1,19 +1,15 @@
 {
     "name": "RGB Dark Theme",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A dark theme with RGB color-changing effects.",
-    "author": "FPSFIGHTER",
+    "author": "YourName",
     "theme": {
         "backgroundColor": "#1e1e1e",
-        "textColor": "rgb(255, 255, 255)",
-        "rgbElements": [
+        "textColor": "#ffffff",
+        "customCSS": [
             {
-                "selector": ".title",
-                "classes": ["rgb-text"]
-            },
-            {
-                "selector": ".username",
-                "classes": ["rgb-text"]
+                "selector": ".rgb-text",
+                "style": "color: inherit;" 
             }
         ]
     }
